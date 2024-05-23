@@ -69,7 +69,7 @@ with open(make_linux_path, 'r') as file:
 osutil_path = 'ZeroTierOne/osdep/OSUtils.cpp'
 with open(osutil_path, 'r') as file: 
     data = file.read().replace(
-                        '/var/lib/zerotier-one', '/data/adb/zerotier/home'
+                        '/var/lib/zerotier-one', '/data/zerotier'
                     )
 with open(osutil_path, 'w') as file:
     file.write(data)
